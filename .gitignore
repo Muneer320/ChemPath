@@ -1,6 +1,7 @@
-venv/
+chemPath/
 __pycache__/
 .env
 *.pyc
 .pytest_cache/
 .coverage
+relate.project.json
