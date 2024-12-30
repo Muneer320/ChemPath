@@ -31,25 +31,28 @@ ChemPath is an educational tool designed to help high school students (particula
 ### Current Directory Structure
 ```plaintext
 ChemPath/
+├── src/
+│   ├── database/
+│   │   ├── __init__.py
+│   │   ├── graph_manager.py
+│   │   └── models.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── routes/
+│   │   └── models/
+│   └── utils/
+│       ├── __init__.py
+│       └── validators.py
 ├── data/
 ├── docker/
-|   ├── docker-compose.yml
-|   └── Dockerfile
+│   ├── docker-compose.yml
+│   └── Dockerfile
 ├── docs/
-├── src/
-|   ├── api/
-|   |   └── main.py
-|   └── database/
-|       └── graph_manager.py
 ├── tests/
 ├── .env
 ├── .gitignore
-├── firstPrototype.py
-├── Project Documentation.md
-├── README.md
-├── relate.project.json
-├── requirements.txt
-└── test_connection.py
+└── requirements.txt
 ```
 
 ### Database Schema
