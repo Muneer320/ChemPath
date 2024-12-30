@@ -5,3 +5,7 @@ __pycache__/
 .pytest_cache/
 .coverage
 relate.project.json
+
+# Test File
+tree.txt
+tree.py
