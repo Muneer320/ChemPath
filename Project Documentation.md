@@ -35,7 +35,7 @@ ChemPath/
 │   ├── database/
 │   │   ├── __init__.py
 │   │   ├── graph_manager.py
-│   │   └── models.py
+│   │   └── data_ingestion.py
 │   ├── api/
 │   │   ├── __init__.py
 │   │   ├── main.py
