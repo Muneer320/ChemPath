@@ -49,7 +49,9 @@ ChemPath/
 ├── docs/
 ├── tests/
 │   ├── __init__.py
-│   └── test_graph_traversal.py
+│   ├── 1_test_graph_traversal.py
+│   ├── 2_test_graph_traversal.py
+│   └── 3_test_compound_validator.py
 ├── .env
 ├── .gitignore
 └── requirements.txt
@@ -72,9 +74,8 @@ Currently implemented as a graph structure:
 4. Initial API endpoints
 
 ### In Progress
-1. Chemical formula validation
-2. Reaction pathfinding algorithms
-3. Basic data collection
+1. Reaction pathfinding algorithms
+2. Basic data collection
 
 ### Pending
 1. User interface implementation

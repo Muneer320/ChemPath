@@ -129,4 +129,4 @@ def test_shortest_path(graph):
 if __name__ == "__main__":
     pytest.main([__file__])
 
-# Run it as follows: "pytest tests/test_graph_traversal.py -v"
+# Run it as follows: "pytest tests/1_test_graph_traversal.py -v"

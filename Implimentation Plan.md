@@ -8,16 +8,15 @@
    - ~~Test basic graph traversal queries~~
 
 2. Core API Implementation
-   - Implement compound validation logic
-   - Create CRUD endpoints for compounds
-   - Create CRUD endpoints for reactions
-   - Add basic error handling and logging
+   - ~~Create CRUD endpoints for compounds~~
+   - ~~Create CRUD endpoints for reactions~~
+   - ~~Add basic error handling and logging~~
    - Write API tests for each endpoint
 
 3. Basic Pathfinding Implementation
-   - Implement simple depth-first search algorithm
-   - Add basic path validation
-   - Create endpoint to find single path between compounds
+   - ~~Implement simple depth-first search algorithm~~
+   - ~~Add basic path validation~~
+   - ~~Create endpoint to find single path between compounds~~
    - Add tests for pathfinding logic
 
 ## Phase 2: Data Enhancement & Algorithm Refinement
