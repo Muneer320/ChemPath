@@ -70,16 +70,16 @@ class ChemicalGraph:
             result = session.execute_read(
                 lambda tx: tx.run(
                     """
-                    MATCH path = (start:Compound {formula: $start})-[reactions:REACTS_TO*..${max_depth}]->(end:Compound {formula: $end})
-                    RETURN path,
-                           [r IN relationships(path) | r.reagent] as reagents,
-                           [r IN relationships(path) | r.reaction_id] as reaction_ids,
-                           length(path) as path_length
+                    MATCH path = (start:Compound {formula: $start})-[reactions:REACTS_TO*..%d]->(end:Compound {formula: $end})
+                    WITH path,
+                        [r IN relationships(path) | r.reagent] as reagents,
+                        [r IN relationships(path) | r.reaction_id] as reaction_ids,
+                        length(path) as path_length
+                    RETURN path, reagents, reaction_ids, path_length
                     ORDER BY path_length
-                    """,
+                    """ % max_depth,
                     start=start_compound,
-                    end=end_compound,
-                    max_depth=max_depth
+                    end=end_compound
                 ).data()
             )
             return result

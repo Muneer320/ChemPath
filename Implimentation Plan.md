@@ -5,7 +5,7 @@
    - ~~Set up test Neo4j instance with sample data~~
    - ~~Create basic compound nodes (start with 10-15 common compounds)~~
    - ~~Add simple reaction relationships between compounds~~
-   - Test basic graph traversal queries
+   - ~~Test basic graph traversal queries~~
 
 2. Core API Implementation
    - Implement compound validation logic

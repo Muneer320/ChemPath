@@ -429,4 +429,4 @@ if __name__ == "__main__":
     ingest_data(REACTION_SETS, clear_existing=False)
     verify_ingestion()
 
-# Run this script from root as : "python -m src.database.data_ingestion"
+# Run this script from root as : "uv run python -m src.database.data_ingestion"
