@@ -1,6 +1,11 @@
 # 🧪 ChemPath: Your Molecular GPS
 *Because getting lost in organic chemistry is so last semester*
 
+## Docs & Plans
+
+- [Project Documentation](<Project Documentation.md>)
+- [Implimentation Plan](<Implimentation Plan.md>)
+
 ## Problem Statement
 High school students preparing for JEE and NEET exams spend countless hours memorizing chemical conversion pathways. Current solutions are either:
 - PhD-level tools (way too complex)
