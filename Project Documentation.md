@@ -38,9 +38,7 @@ ChemPath/
 │   │   └── data_ingestion.py
 │   ├── api/
 │   │   ├── __init__.py
-│   │   ├── main.py
-│   │   ├── routes/
-│   │   └── models/
+│   │   └── main.py
 │   └── utils/
 │       ├── __init__.py
 │       └── validators.py
@@ -50,6 +48,8 @@ ChemPath/
 │   └── Dockerfile
 ├── docs/
 ├── tests/
+│   ├── __init__.py
+│   └── test_graph_traversal.py
 ├── .env
 ├── .gitignore
 └── requirements.txt

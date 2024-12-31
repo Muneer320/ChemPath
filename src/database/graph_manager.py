@@ -69,29 +69,14 @@ class ChemicalGraph:
         with self._driver.session() as session:
             result = session.execute_read(
                 lambda tx: tx.run(
-                    """
-                    MATCH path = (start:Compound {formula: $start})-[reactions:REACTS_TO*..%d]->(end:Compound {formula: $end})
+                    f"""
+                    MATCH path = (start:Compound {{formula: $start}})-[reactions:REACTS_TO*..{max_depth}]->(end:Compound {{formula: $end}})
                     WITH path,
-                        [r IN relationships(path) | r.reagent] as reagents,
-                        [r IN relationships(path) | r.reaction_id] as reaction_ids,
-                        length(path) as path_length
-                    RETURN path, reagents, reaction_ids, path_length
+                         [r IN relationships(path) | r.reagent] AS reagents,
+                         [r IN relationships(path) | properties(r)] AS reactionProperties,
+                         length(path) AS path_length
+                    RETURN path, reagents, reactionProperties, path_length
                     ORDER BY path_length
-                    """ % max_depth,
-                    start=start_compound,
-                    end=end_compound
-                ).data()
-            )
-            return result
-
-    def find_path(self, start_compound: str, end_compound: str):
-        with self._driver.session() as session:
-            result = session.execute_read(
-                lambda tx: tx.run(
-                    """
-                    MATCH path = (start:Compound {formula: $start})-[:REACTS_TO*]->(end:Compound {formula: $end})
-                    RETURN path
-                    LIMIT 1
                     """,
                     start=start_compound,
                     end=end_compound

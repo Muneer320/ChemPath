@@ -7,7 +7,7 @@ from src.database.graph_manager import ChemicalGraph
 
 load_dotenv()
 
-app = FastAPI(title="ChemPath Finder")
+app = FastAPI(title="ChemPath API", version="0.1")
 graph = ChemicalGraph(
     os.getenv("NEO4J_URI"),
     os.getenv("NEO4J_USER"),
