@@ -1,0 +1,12 @@
+chemPath/
+__pycache__/
+.env
+*.pyc
+.pytest_cache/
+.coverage
+relate.project.json
+
+# Test File
+tree.txt
+tree.py
+test.py
