@@ -92,6 +92,10 @@ class ReactionCreate(BaseModel):
 
 # Endpoints
 
+@app.get("/")
+async def root():
+    return {"message": "ChemPath API is running", "status": "ok"}
+
 @app.get("/health")
 async def health_check():
     """Enhanced API health check endpoint"""
