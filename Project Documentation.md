@@ -27,6 +27,7 @@ ChemPath is an educational tool designed to help high school students (particula
 - **Framework**: FastAPI
 - **Database**: Neo4j (Graph Database)
 - **Language**: Python 3.9+
+- **Hosting**: Huggingface
 
 ### Current Directory Structure
 ```plaintext
@@ -38,23 +39,25 @@ ChemPath/
 │   │   └── data_ingestion.py
 │   ├── api/
 │   │   ├── __init__.py
-│   │   └── main.py
+│   │   └── main.py     # Also available in the root because huggingface wants it there
 │   └── utils/
 │       ├── __init__.py
 │       └── validators.py
 ├── data/
 ├── docker/
 │   ├── docker-compose.yml
-│   └── Dockerfile
+│   └── Dockerfile    # These are also in root because HuggingFace
 ├── docs/
 ├── tests/
 │   ├── __init__.py
 │   ├── 1_test_graph_traversal.py
-│   ├── 2_test_graph_traversal.py
-│   └── 3_test_compound_validator.py
+│   └── 2_test_graph_traversal.py
 ├── .env
 ├── .gitignore
-└── requirements.txt
+├── requirements.txt
+├── main.py
+├── Dockerfile
+└── firstPrototype.py
 ```
 
 ### Database Schema
@@ -72,9 +75,10 @@ Currently implemented as a graph structure:
 2. Basic Neo4j database setup
 3. Basic GraphManager class implementation
 4. Initial API endpoints
+5. Host Online
 
 ### In Progress
-1. Reaction pathfinding algorithms
+1. Documentation
 2. Basic data collection
 
 ### Pending
@@ -82,8 +86,7 @@ Currently implemented as a graph structure:
 2. Reaction condition details
 3. Path optimization
 4. Testing suite
-5. Documentation
-6. Deployment setup
+5. Deployment setup
 
 ## Data Sources
 Planning to collect data from:
@@ -133,7 +136,7 @@ reactions_graph = {
    - Add more reactions
    - Implement basic UI
 
-3. **Long-term Goals**
+3. **Long-term Goals** (maybe)
    - Mobile app development
    - Integration with educational platforms
    - Advanced features (3D structures, mechanism visualization)
@@ -142,8 +145,8 @@ reactions_graph = {
 
 ### Prerequisites
 - Python 3.9+
-- Neo4j Desktop
-- Docker (optional)
+- Neo4j Desktop (optional)
+- Docker
 
 ### Environment Setup
 ```bash
