@@ -1,8 +1,8 @@
 ---
 title: ChemPath
-emoji: 🏢
+emoji: 🧪
 colorFrom: blue
-colorTo: pink
+colorTo: green
 sdk: docker
 pinned: false
 license: mit

@@ -18,7 +18,8 @@ load_dotenv()
 app = FastAPI(
     title="ChemPath API",
     description="Chemical Reaction Pathway Finder for Students",
-    version="0.1.0"
+    version="0.1.0",
+    root_path=""
 )
 
 # Add CORS middleware
@@ -94,7 +95,11 @@ class ReactionCreate(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "ChemPath API is running", "status": "ok"}
+    return {
+        "status": "running",
+        "service": "ChemPath API",
+        "time": datetime.utcnow().isoformat()
+    }
 
 @app.get("/health")
 async def health_check():
