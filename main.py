@@ -25,7 +25,7 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust this in production
+    allow_origins=["*"],  # Will adjust this in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -39,7 +39,6 @@ async def startup_event():
     global graph
     logger.info("Starting up ChemPath API")
     
-    # Verify environment variables
     required_vars = ["NEO4J_URI", "NEO4J_USER", "NEO4J_PASSWORD"]
     missing_vars = [var for var in required_vars if not os.getenv(var)]
     
