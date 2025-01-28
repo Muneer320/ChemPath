@@ -3,8 +3,8 @@
 
 ## Docs & Plans
 
-- [Project Documentation](<Project Documentation.md>)
-- [Implimentation Plan](<Implimentation Plan.md>)
+- [Project Documentation](<../Project Documentation.md>)
+- [Implimentation Plan](<../Implimentation Plan.md>)
 
 ## Problem Statement
 High school students preparing for JEE and NEET exams spend countless hours memorizing chemical conversion pathways. Current solutions are either:
