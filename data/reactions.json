@@ -1,0 +1,413 @@
+{
+  "description": "Small teaching subset of organic conversions; not a complete NCERT reaction corpus",
+  "compounds": [
+    {
+      "id": "ethyne",
+      "name": "Ethyne",
+      "formula": "HC≡CH",
+      "class": "alkyne",
+      "aliases": [
+        "CHCH"
+      ]
+    },
+    {
+      "id": "ethene",
+      "name": "Ethene",
+      "formula": "CH2=CH2",
+      "class": "alkene",
+      "aliases": [
+        "ethylene",
+        "CH2CH2"
+      ]
+    },
+    {
+      "id": "propene",
+      "name": "Propene",
+      "formula": "CH3CH=CH2",
+      "class": "alkene",
+      "aliases": [
+        "CH3CHCH2"
+      ]
+    },
+    {
+      "id": "ethanol",
+      "name": "Ethanol",
+      "formula": "CH3CH2OH",
+      "class": "alcohol",
+      "aliases": [
+        "ethyl alcohol"
+      ]
+    },
+    {
+      "id": "methanol",
+      "name": "Methanol",
+      "formula": "CH3OH",
+      "class": "alcohol",
+      "aliases": [
+        "methyl alcohol"
+      ]
+    },
+    {
+      "id": "ethanal",
+      "name": "Ethanal",
+      "formula": "CH3CHO",
+      "class": "aldehyde",
+      "aliases": [
+        "acetaldehyde"
+      ]
+    },
+    {
+      "id": "methanal",
+      "name": "Methanal",
+      "formula": "HCHO",
+      "class": "aldehyde",
+      "aliases": [
+        "formaldehyde",
+        "HCHO",
+        "CH2O"
+      ]
+    },
+    {
+      "id": "ethanoic-acid",
+      "name": "Ethanoic acid",
+      "formula": "CH3COOH",
+      "class": "carboxylic acid",
+      "aliases": [
+        "acetic acid"
+      ]
+    },
+    {
+      "id": "methanoic-acid",
+      "name": "Methanoic acid",
+      "formula": "HCOOH",
+      "class": "carboxylic acid",
+      "aliases": [
+        "formic acid"
+      ]
+    },
+    {
+      "id": "chloroethane",
+      "name": "Chloroethane",
+      "formula": "CH3CH2Cl",
+      "class": "haloalkane",
+      "aliases": []
+    },
+    {
+      "id": "bromoethane",
+      "name": "Bromoethane",
+      "formula": "CH3CH2Br",
+      "class": "haloalkane",
+      "aliases": []
+    },
+    {
+      "id": "propanone",
+      "name": "Propanone",
+      "formula": "CH3COCH3",
+      "class": "ketone",
+      "aliases": [
+        "acetone"
+      ]
+    },
+    {
+      "id": "propan-2-ol",
+      "name": "Propan-2-ol",
+      "formula": "CH3CH(OH)CH3",
+      "class": "alcohol",
+      "aliases": [
+        "isopropanol"
+      ]
+    },
+    {
+      "id": "dimethyl-ether",
+      "name": "Dimethyl ether",
+      "formula": "CH3OCH3",
+      "class": "ether",
+      "aliases": []
+    },
+    {
+      "id": "diethyl-ether",
+      "name": "Diethyl ether",
+      "formula": "CH3CH2OCH2CH3",
+      "class": "ether",
+      "aliases": []
+    },
+    {
+      "id": "methyl-ethanoate",
+      "name": "Methyl ethanoate",
+      "formula": "CH3COOCH3",
+      "class": "ester",
+      "aliases": [
+        "methyl acetate"
+      ]
+    },
+    {
+      "id": "ethyl-ethanoate",
+      "name": "Ethyl ethanoate",
+      "formula": "CH3COOCH2CH3",
+      "class": "ester",
+      "aliases": [
+        "ethyl acetate"
+      ]
+    },
+    {
+      "id": "chloromethane",
+      "name": "Chloromethane",
+      "formula": "CH3Cl",
+      "class": "haloalkane",
+      "aliases": []
+    },
+    {
+      "id": "methylamine",
+      "name": "Methylamine",
+      "formula": "CH3NH2",
+      "class": "amine",
+      "aliases": []
+    },
+    {
+      "id": "aniline",
+      "name": "Aniline",
+      "formula": "C6H5NH2",
+      "class": "amine",
+      "aliases": []
+    },
+    {
+      "id": "phenol",
+      "name": "Phenol",
+      "formula": "C6H5OH",
+      "class": "phenol",
+      "aliases": []
+    }
+  ],
+  "reactions": [
+    {
+      "id": "r01",
+      "reactant": "ethyne",
+      "product": "ethene",
+      "conditions": {
+        "reagent": "H2/Lindlar catalyst",
+        "mechanism": "partial hydrogenation"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r02",
+      "reactant": "ethene",
+      "product": "ethanol",
+      "conditions": {
+        "reagent": "steam/H3PO4",
+        "mechanism": "acid-catalysed hydration"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r03",
+      "reactant": "ethene",
+      "product": "chloroethane",
+      "conditions": {
+        "reagent": "HCl",
+        "mechanism": "electrophilic addition"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r04",
+      "reactant": "ethene",
+      "product": "bromoethane",
+      "conditions": {
+        "reagent": "HBr",
+        "mechanism": "electrophilic addition"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r05",
+      "reactant": "ethanol",
+      "product": "ethene",
+      "conditions": {
+        "reagent": "concentrated H2SO4, heat",
+        "mechanism": "dehydration"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r06",
+      "reactant": "ethanol",
+      "product": "ethanal",
+      "conditions": {
+        "reagent": "Cu, heat",
+        "mechanism": "dehydrogenation"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r07",
+      "reactant": "ethanol",
+      "product": "ethanal",
+      "conditions": {
+        "reagent": "CuO, heat",
+        "mechanism": "oxidation"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r08",
+      "reactant": "ethanol",
+      "product": "ethanoic-acid",
+      "conditions": {
+        "reagent": "acidified KMnO4",
+        "mechanism": "oxidation"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r09",
+      "reactant": "ethanol",
+      "product": "ethanoic-acid",
+      "conditions": {
+        "reagent": "acidified K2Cr2O7",
+        "mechanism": "oxidation"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r10",
+      "reactant": "ethanal",
+      "product": "ethanoic-acid",
+      "conditions": {
+        "reagent": "acidified K2Cr2O7",
+        "mechanism": "oxidation"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r11",
+      "reactant": "ethanal",
+      "product": "ethanol",
+      "conditions": {
+        "reagent": "NaBH4",
+        "mechanism": "reduction"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r12",
+      "reactant": "ethanol",
+      "product": "chloroethane",
+      "conditions": {
+        "reagent": "SOCl2",
+        "mechanism": "substitution"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r13",
+      "reactant": "ethanoic-acid",
+      "product": "methyl-ethanoate",
+      "conditions": {
+        "reagent": "methanol/H+, heat",
+        "mechanism": "esterification"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r14",
+      "reactant": "ethanoic-acid",
+      "product": "ethyl-ethanoate",
+      "conditions": {
+        "reagent": "ethanol/H+, heat",
+        "mechanism": "esterification"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r15",
+      "reactant": "ethanol",
+      "product": "diethyl-ether",
+      "conditions": {
+        "reagent": "concentrated H2SO4, warm",
+        "mechanism": "dehydration"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r16",
+      "reactant": "methanol",
+      "product": "methanal",
+      "conditions": {
+        "reagent": "Cu, heat",
+        "mechanism": "dehydrogenation"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r17",
+      "reactant": "methanal",
+      "product": "methanoic-acid",
+      "conditions": {
+        "reagent": "acidified K2Cr2O7",
+        "mechanism": "oxidation"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r18",
+      "reactant": "methanol",
+      "product": "dimethyl-ether",
+      "conditions": {
+        "reagent": "concentrated H2SO4, warm",
+        "mechanism": "dehydration"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r19",
+      "reactant": "methanol",
+      "product": "chloromethane",
+      "conditions": {
+        "reagent": "SOCl2",
+        "mechanism": "substitution"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r20",
+      "reactant": "chloromethane",
+      "product": "methylamine",
+      "conditions": {
+        "reagent": "excess NH3, heat",
+        "mechanism": "substitution"
+      },
+      "teaching_cost": 2
+    },
+    {
+      "id": "r21",
+      "reactant": "propanone",
+      "product": "propan-2-ol",
+      "conditions": {
+        "reagent": "NaBH4",
+        "mechanism": "reduction"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r22",
+      "reactant": "propene",
+      "product": "propan-2-ol",
+      "conditions": {
+        "reagent": "H2O/H+",
+        "mechanism": "hydration"
+      },
+      "teaching_cost": 1
+    },
+    {
+      "id": "r23",
+      "reactant": "aniline",
+      "product": "phenol",
+      "conditions": {
+        "reagent": "NaNO2/HCl, then warm water",
+        "mechanism": "diazotisation then hydrolysis"
+      },
+      "teaching_cost": 3
+    }
+  ]
+}
