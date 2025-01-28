@@ -212,4 +212,4 @@ async def create_reaction(reaction: ReactionCreate):
         raise HTTPException(status_code=400, detail=str(e))
 
 
-# Run the API with Uvicorn: `uvicorn src.api.main:app --reload`
+# Run the API with Uvicorn: `uvicorn main:app --reload`
