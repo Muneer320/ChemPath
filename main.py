@@ -103,7 +103,7 @@ async def root():
 
 @app.get("/health")
 async def health_check():
-    """Enhanced API health check endpoint"""
+    """API health check endpoint"""
     if not graph:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
